@@ -1,3 +1,349 @@
 body {
-    background-color: brown;
+    margin: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+
+/** ------- header -------*/
+.header {
+    display: flex;
+    position: relative;
+    height: 100vh;
+}
+
+/** left header */
+.leftHeader {
+    background-color: #b6424f;
+    width: 50%;
+    padding-left: 4rem;
+    z-index: 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.leftHeader__logo {
+    width: 18em;
+}
+
+.leftHeader__title {
+    font-size: 7em;
+    font-weight: 400;
+    margin: 0;
+    line-height: 1em;
+}
+
+.leftHeader__subtitle {
+    font-size: 1.3em;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: .25em;
+}
+
+/** image centrale du header */
+.header__image {
+    position: relative;
+}
+.header__image img{
+    width: 50em;
+   position: absolute;
+   left: -25em;
+   top: 5em;
+   z-index: 10;
+}
+
+/** right header */
+.rightHeader {
+    width: 50%;
+    z-index: 0;
+}
+
+.rightHeader__image {
+    filter: grayscale(100%);
+    height: 100%;
+    z-index: 0;
+
+}
+
+
+
+/** ------- helmets ------- **/
+
+.helmets {
+    display: flex;
+    justify-content: space-around;
+    padding: 5em;
+}
+
+.helmet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.helmet__image {
+    height : 20em
+}
+
+.helmet__name {
+    font-size: 2em;
+    font-weight: 400;
+    margin: 0;
+}
+
+.helmet__description {
+    margin-top: 1.2em;
+    margin-bottom: 2em;
+}
+
+.helmet__link {
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+    border-bottom: #b6424f solid 3px;
+}
+
+
+/**  ----------- helmet review ----------- **/
+
+.helmetReview {
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+}
+
+.helmetReview__background {
+    position: absolute;
+    z-index: 0;
+    width: 100vw;
+    height: 100%;
+    filter: grayscale(100%);
+    opacity: 0.3;
+    object-fit: cover;
+}
+
+.helmetReview__image {
+    z-index: 10;
+    width: 40%;
+    object-fit: cover;
+    margin: 2em 0 12em 2em;
+}
+
+.helmetReview__rightPart {
+    z-index: 10;
+    margin-right: 2em;
+    margin-left: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 50%;
+}
+
+.helmetReview__title {
+    font-size: 3em;
+    font-weight: 300;
+    line-height: 1em;
+}
+
+.helmetReview__subtitle {
+    color: #b6424f;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 1.2em;
+}
+
+.helmetReview__link {
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+    border-bottom: #b6424f solid 3px;
+}
+
+
+.videoPart {
+    background-color: #b6424f;
+    position: relative;
+    height: 30em;
+}
+
+iframe {
+    position: absolute;
+    top: -5em;
+    left: 30em;
+}
+
+
+/** ------- new collection -------- **/
+
+.newCollection {
+    position: relative;
+}
+
+.newCollection__background {
+    filter: grayscale(100%) brightness(50%);
+    position: absolute;
+    height: 40em;
+    width: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.newCollection__part {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 10;
+    color: white;
+    padding: 5em;
+    width: 50%;
+}
+
+.newCollection__title {
+    font-size: 3em;
+    font-weight: 400;
+    z-index: 10;
+}
+
+.newCollection__subtitle {
+    color: #b6424f;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.4em;
+    z-index: 10;
+}
+
+.newCollection__paragraph {
+    z-index: 10;
+}
+
+.newCollection__link {
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    border-bottom: #b6424f solid 3px;
+    z-index: 10;
+}
+
+
+/** ---------- neotec ----------- **/
+
+.neotec {
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+}
+
+.neotec__image {
+    z-index: 10;
+    height: 35em;
+    width: 30em;
+    object-fit: cover;
+    margin: 5em;
+}
+
+.neotec__leftPart {
+    z-index: 10;
+    margin-right: 2em;
+    margin-left: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 40%;
+}
+
+.neotec__title {
+    font-size: 3em;
+    font-weight: 300;
+    line-height: 1em;
+}
+
+.neotec__subtitle {
+    color: #b6424f;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 1.2em;
+}
+
+.neotec__link {
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+    border-bottom: #b6424f solid 3px;
+}
+
+
+/** ----------- footer form ---------- **/
+
+footer {
+    background-color: #b6424f;
+    padding: 4em;
+}
+
+.footerForm__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;    
+}
+
+.footerForm__logo{
+    width: 18em;
+    height: 6em;
+    object-fit: cover;
+}
+
+.footerForm__title {
+    color: white;
+    text-align: center;
+    width: 25%;
+    margin: 1em;
+}
+
+.footerForm__name {
+    background-color: #b6424f;
+    border: 1px solid white;
+    border-radius: 3px;
+    margin: .5em;
+    width: 25%;
+    height: 2em;
+    padding: .3em;
+}
+
+.footerForm__mail {
+    background-color: #b6424f;
+    border: 1px solid white;
+    border-radius: 3px;
+    margin: .5em;
+    width: 25%;
+    height: 2em;
+    padding: .3em;
+}
+
+.footerForm__text {
+    background-color: #b6424f;
+    border: 1px solid white;
+    border-radius: 3px;
+    margin: .5em;
+    width: 25%;
+    padding: .3em;
+}
+
+::placeholder {
+    color: white;
+}
+
+.footerForm__button {
+    border: none;
+    border-radius: 5px;
+    margin-top: .5em;
+    color: #b6424f;
+    font-weight: 900;
+    font-family: 'Noto Sans JP', sans-serif;
+    padding: .5em 1em;
 }
